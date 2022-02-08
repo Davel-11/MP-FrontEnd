@@ -1,12 +1,21 @@
-import React from 'react'
-import './Side.scss'
+import React from 'react';
+import './Side.scss';
+import { NavLink } from 'react-router-dom';
 
 const Side = () => {
-    const data = null
-
-    return <div className="side">
-        <h1>side </h1>
-    </div>
+    
+    return (
+    <section className="side">
+        <div className="logo">
+            <img alt="mp logo" src="https://www.mp.gob.gt/wp-content/uploads/2021/07/MP_logo.png"  />
+        </div>
+        <ul>
+            <li><NavLink to="/">Inicio</NavLink></li>
+            <li><NavLink to="/fiscalias">Fiscalia</NavLink></li>
+            <li><NavLink to="/reportes">Reportes</NavLink></li>
+        </ul>
+    </section>
+    )
 }
 
-export default Side
+export default  Side
