@@ -1,14 +1,51 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("./fonts/Nunito-Regular.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
 .main-app {
-  background: white;
+  background: rgba(255, 255, 255, 0.897);
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
+  align-items: flex-start;
 
+  font-family: "Nunito";
   color: rgb(78, 78, 78);
 
-  overflow-x: unset;
-  overflow-y: unset;
+  overflow-x: auto;
+  overflow-y: auto;
+  position: relative;
+
+  .menu {
+    width: 80px;
+    height: 100%;
+    background: lightgoldenrodyellow;
+    cursor: pointer;
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    transition: width 0.25s;
+
+    &:hover {
+      width: 300px;
+      transition: width 0.25s;
+    }
+  }
+
+  .content {
+    width: calc(100% - 80px);
+    height: 100%;
+    background: lightcoral;
+    z-index: 1;
+    margin-left: 80px
+  }
+
 }
 
