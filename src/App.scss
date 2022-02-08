@@ -1,0 +1,14 @@
+.main-app {
+  background: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  color: rgb(78, 78, 78);
+
+  overflow-x: unset;
+  overflow-y: unset;
+}
+
