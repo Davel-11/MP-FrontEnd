@@ -1,0 +1,45 @@
+.table {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .buscar {
+        width: 90%;
+        padding: 5px 10px 5px 10px;
+    }
+
+    .listado {
+        list-style: none;
+        width: 90%;
+        height: 100%;
+        margin: 0;
+        padding: 5px 10px 5px 10px;
+        li {
+            font-size: 0.95rem;
+            width: 100%;
+            height: 35px;
+            border-bottom: solid 1px rgb(224, 224, 224);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+
+            padding-left: 15px;
+            padding-bottom: 5px;
+
+            &:hover {
+                background: lightslategray;
+                color: white;
+                cursor: pointer;
+                font-weight: bolder;
+                border-radius: 5px;
+            }
+        }
+    }
+}

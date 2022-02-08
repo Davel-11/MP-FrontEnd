@@ -17,14 +17,13 @@
   font-family: "Nunito";
   color: rgb(78, 78, 78);
 
-  overflow-x: auto;
-  overflow-y: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
   position: relative;
 
   .menu {
     width: 80px;
     height: 100%;
-    background: lightgoldenrodyellow;
     cursor: pointer;
 
     position: absolute;
@@ -32,6 +31,8 @@
     top: 0px;
     z-index: 2;
     transition: width 0.25s;
+
+    box-shadow: 0px 0px 2px rgb(133, 133, 133);
 
     &:hover {
       width: 300px;

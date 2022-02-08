@@ -11,7 +11,7 @@ const Side = () => {
         </div>
         <ul>
             <li><NavLink to="/">Inicio</NavLink></li>
-            <li><NavLink to="/fiscalias">Fiscalia</NavLink></li>
+            <li><NavLink to="/fiscalias">Fiscalias</NavLink></li>
             <li><NavLink to="/reportes">Reportes</NavLink></li>
         </ul>
     </section>
