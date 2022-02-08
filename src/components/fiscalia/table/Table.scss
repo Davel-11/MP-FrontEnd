@@ -26,12 +26,21 @@
             border-bottom: solid 1px rgb(224, 224, 224);
 
             display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
 
             padding-left: 15px;
-            padding-bottom: 5px;
+            padding-right: 20px;
+
+            div {
+                width: 90%;
+            }
+
+            span {
+                display: none;
+                width: 10%;
+            }
 
             &:hover {
                 background: lightslategray;
@@ -39,6 +48,12 @@
                 cursor: pointer;
                 font-weight: bolder;
                 border-radius: 5px;
+                span {
+                    display: block;
+                    background: lightcoral;
+                    border-radius: 10px;
+                    padding: 3px 10px;
+                }
             }
         }
     }

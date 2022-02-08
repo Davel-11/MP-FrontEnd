@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Table.scss'
 
-const Table = (fiscalias) => {
-    const data = null
-    console.log('fiscalias', fiscalias.fiscalias)
-
+const Table = ({fiscalias, setEditFiscalia, processDeleteFiscalia}) => {
+    
     return <div className="table">
-        <div className="buscar">Buscar</div>
+        <h2 className="buscar">Buscar</h2>
         <ul className="listado">
-            {fiscalias?.fiscalias?.map((fiscalia) => (
-                <li>{fiscalia.id + ` - ` + fiscalia.ubicacion}</li>)) 
+            {fiscalias?.map((fiscalia) => (
+                <li >
+                    <div onClick={() => setEditFiscalia(fiscalia)}>{fiscalia.id + ` - ` + fiscalia.ubicacion}</div> 
+                    <span onClick={() => processDeleteFiscalia(fiscalia.id)} >Eliminar</span>
+                </li>)) 
             }
         </ul>
     </div>
