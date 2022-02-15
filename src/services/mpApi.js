@@ -28,3 +28,12 @@ export const deleteFiscalia = (id) => {
   
     return res
 }
+
+export const fetchFiscaliaReporte = () => {
+  const res = fetch(`http://${server}:8085/mpbackend/api/fiscalia/reporte`, {
+    method: 'GET',
+    headers: { 'Content-Type': 'application/json' },
+  })
+
+  return res
+}
